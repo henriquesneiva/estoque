@@ -27,15 +27,12 @@ Partial Class F_principal
         Me.CadastrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FaturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaGeralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaPorCategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatoriosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelatorioGeralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatorioEspecificoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BT_clientes = New System.Windows.Forms.Button()
         Me.BT_produtos = New System.Windows.Forms.Button()
         Me.BT_usuarios = New System.Windows.Forms.Button()
@@ -47,7 +44,7 @@ Partial Class F_principal
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrosToolStripMenuItem, Me.ConsultasToolStripMenuItem, Me.RelatoriosToolStripMenuItem, Me.AjudaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrosToolStripMenuItem, Me.ConsultasToolStripMenuItem, Me.RelatoriosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 1, 0, 1)
@@ -57,7 +54,7 @@ Partial Class F_principal
         '
         'CadastrosToolStripMenuItem
         '
-        Me.CadastrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.RegistrosToolStripMenuItem, Me.FaturasToolStripMenuItem, Me.UsuariosToolStripMenuItem})
+        Me.CadastrosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.RegistrosToolStripMenuItem, Me.UsuariosToolStripMenuItem})
         Me.CadastrosToolStripMenuItem.Name = "CadastrosToolStripMenuItem"
         Me.CadastrosToolStripMenuItem.Size = New System.Drawing.Size(69, 22)
         Me.CadastrosToolStripMenuItem.Text = "cadastros"
@@ -65,25 +62,19 @@ Partial Class F_principal
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ClientesToolStripMenuItem.Text = "clientes"
         '
         'RegistrosToolStripMenuItem
         '
         Me.RegistrosToolStripMenuItem.Name = "RegistrosToolStripMenuItem"
-        Me.RegistrosToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.RegistrosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RegistrosToolStripMenuItem.Text = "produtos"
-        '
-        'FaturasToolStripMenuItem
-        '
-        Me.FaturasToolStripMenuItem.Name = "FaturasToolStripMenuItem"
-        Me.FaturasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
-        Me.FaturasToolStripMenuItem.Text = "faturas"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UsuariosToolStripMenuItem.Text = "usuarios"
         '
         'ConsultasToolStripMenuItem
@@ -107,28 +98,16 @@ Partial Class F_principal
         '
         'RelatoriosToolStripMenuItem
         '
-        Me.RelatoriosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelatorioGeralToolStripMenuItem, Me.RelatorioEspecificoToolStripMenuItem})
+        Me.RelatoriosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelatorioEspecificoToolStripMenuItem})
         Me.RelatoriosToolStripMenuItem.Name = "RelatoriosToolStripMenuItem"
         Me.RelatoriosToolStripMenuItem.Size = New System.Drawing.Size(68, 22)
         Me.RelatoriosToolStripMenuItem.Text = "relatorios"
         '
-        'RelatorioGeralToolStripMenuItem
-        '
-        Me.RelatorioGeralToolStripMenuItem.Name = "RelatorioGeralToolStripMenuItem"
-        Me.RelatorioGeralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RelatorioGeralToolStripMenuItem.Text = "relatorio geral"
-        '
         'RelatorioEspecificoToolStripMenuItem
         '
         Me.RelatorioEspecificoToolStripMenuItem.Name = "RelatorioEspecificoToolStripMenuItem"
-        Me.RelatorioEspecificoToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.RelatorioEspecificoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RelatorioEspecificoToolStripMenuItem.Text = "relatorio especifico"
-        '
-        'AjudaToolStripMenuItem
-        '
-        Me.AjudaToolStripMenuItem.Name = "AjudaToolStripMenuItem"
-        Me.AjudaToolStripMenuItem.Size = New System.Drawing.Size(48, 22)
-        Me.AjudaToolStripMenuItem.Text = "ajuda"
         '
         'BT_clientes
         '
@@ -225,15 +204,12 @@ Partial Class F_principal
     Friend WithEvents CadastrosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClientesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegistrosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents FaturasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultaGeralToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultaPorCategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RelatoriosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents RelatorioGeralToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RelatorioEspecificoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AjudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BT_clientes As Button
     Friend WithEvents BT_produtos As Button
     Friend WithEvents BT_usuarios As Button

@@ -57,6 +57,4 @@ Public Class f_login
         End If
     End Sub
 
-
-
 End Class

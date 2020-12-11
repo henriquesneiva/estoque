@@ -27,7 +27,7 @@ Partial Class Formulario_relatorio
         Me.R_usuarios = New System.Windows.Forms.RadioButton()
         Me.R_clientes = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BT_excluir = New System.Windows.Forms.Button()
+        Me.BT_sair = New System.Windows.Forms.Button()
         Me.BT_relatorio = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,22 +75,22 @@ Partial Class Formulario_relatorio
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
-        'BT_excluir
+        'BT_sair
         '
-        Me.BT_excluir.BackColor = System.Drawing.Color.Transparent
-        Me.BT_excluir.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.BT_excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BT_excluir.ForeColor = System.Drawing.SystemColors.Control
-        Me.BT_excluir.Image = CType(resources.GetObject("BT_excluir.Image"), System.Drawing.Image)
-        Me.BT_excluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BT_excluir.Location = New System.Drawing.Point(107, 250)
-        Me.BT_excluir.Margin = New System.Windows.Forms.Padding(2)
-        Me.BT_excluir.Name = "BT_excluir"
-        Me.BT_excluir.Size = New System.Drawing.Size(62, 59)
-        Me.BT_excluir.TabIndex = 35
-        Me.BT_excluir.Text = "menu"
-        Me.BT_excluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BT_excluir.UseVisualStyleBackColor = False
+        Me.BT_sair.BackColor = System.Drawing.Color.Transparent
+        Me.BT_sair.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BT_sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BT_sair.ForeColor = System.Drawing.SystemColors.Control
+        Me.BT_sair.Image = CType(resources.GetObject("BT_sair.Image"), System.Drawing.Image)
+        Me.BT_sair.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BT_sair.Location = New System.Drawing.Point(107, 250)
+        Me.BT_sair.Margin = New System.Windows.Forms.Padding(2)
+        Me.BT_sair.Name = "BT_sair"
+        Me.BT_sair.Size = New System.Drawing.Size(62, 59)
+        Me.BT_sair.TabIndex = 35
+        Me.BT_sair.Text = "menu"
+        Me.BT_sair.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BT_sair.UseVisualStyleBackColor = False
         '
         'BT_relatorio
         '
@@ -115,7 +115,7 @@ Partial Class Formulario_relatorio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(462, 310)
-        Me.Controls.Add(Me.BT_excluir)
+        Me.Controls.Add(Me.BT_sair)
         Me.Controls.Add(Me.BT_relatorio)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.R_clientes)
@@ -134,6 +134,6 @@ Partial Class Formulario_relatorio
     Friend WithEvents R_usuarios As RadioButton
     Friend WithEvents R_clientes As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents BT_excluir As Button
+    Friend WithEvents BT_sair As Button
     Friend WithEvents BT_relatorio As Button
 End Class

@@ -29,15 +29,11 @@
     End Sub
 
     Private Sub BT_usuarios_Click(sender As Object, e As EventArgs) Handles BT_usuarios.Click
-        F_usuarios.Show()
+        F_usuarios.Show
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Formulario_relatorio.Show()
 
-    End Sub
-
-    Private Sub RelatorioGeralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelatorioGeralToolStripMenuItem.Click
-        Formulario_relatorio.Show()
     End Sub
 End Class
